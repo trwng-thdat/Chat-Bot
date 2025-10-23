@@ -1,7 +1,7 @@
 import { GoogleGenAI } from '@google/genai';
 
 const ai = new GoogleGenAI({
-  apiKey: 'AIzaSyDfYXNQR-ErR9mNhrYozYjHXmS1eparZsE',
+  apiKey: process.env.API_KEY,
 });
 
 const chatbot = async (req, res) => {
